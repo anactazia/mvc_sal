@@ -6,6 +6,10 @@ class Dashboard extends Controller {
 		parent::__construct();
 		Session::init();
 		$logged = Session::get('loggedIn');
+		$email = Session::get('email');
+		$user = Session::get('login');
+		$id = Session::get('id');
+
 		if ($logged == false) {
 			Session::destroy();
 			header('location: ../login');
@@ -18,29 +22,19 @@ class Dashboard extends Controller {
 	
 	function index() 
 	{	
-		$this->view->render('dashboard/index');
+		$role = Session::get('role');
+		if($role == 'admin') {$this->view->render('dashboard/adminindex');}
+		else {$this->view->render('dashboard/userindex');}
 	}
 	
 	function logout()
 	{
 		Session::destroy();
-		header('location: ' . URL .  'login');
+		$this->view->render('dashboard/logout');
 		exit;
 	}
 	
-	function xhrInsert()
-	{
-		$this->model->xhrInsert();
-	}
 	
-	function xhrGetListings()
-	{
-		$this->model->xhrGetListings();
-	}
 	
-	function xhrDeleteListing()
-	{
-		$this->model->xhrDeleteListing();
-	}
 
 }

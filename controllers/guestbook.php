@@ -4,10 +4,8 @@ class Guestbook extends Controller {
 
 	public function __construct() {
 		parent::__construct();
-
 		}
 
-	
 	public function index() 
 	{	
 		$this->view->guestbookList = $this->model->guestbookList();

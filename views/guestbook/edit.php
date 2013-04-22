@@ -3,8 +3,6 @@
 
 <?php
 
-
-
 echo '<table class="tableedit">';
 echo '<tr><td colspan="2"><span class="uppercase">Meddelandet du vill ändra:</span><hr /></td></tr>';
 echo '<tr><td class="td1"><span class="tgtxt">Ämne:</span></td><td class="td2"><span class="td3">' . $this->guestbook[1] . '</span></td></tr>';

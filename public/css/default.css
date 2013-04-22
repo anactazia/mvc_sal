@@ -3,6 +3,7 @@ body { width: 1000px;
 	margin-right: auto;
 	background: silver;
 	font: 14px 'trebuchet ms', arial, sans-serif;
+	
 }
 
 /** Structure */
@@ -13,11 +14,16 @@ body { width: 1000px;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 	border-bottom: 4px solid #436fac;
+	text-transform:uppercase;
 }
+
+.loginmenu	{float: right;
+		margin-left:5px;}
 
 #content {
 	background: #fff;
 	padding: 20px;
+	min-height: 450px;
 }
 
 #footer {
@@ -87,7 +93,9 @@ h1	{text-transform: uppercase;
 
 .formuser	{margin-left: 250px;}
 
-.tableuser	{margin-left: 395px;}
+.tableuser	{margin-left: 150px;
+		width: 650px;
+		}
 
 .formguest	{margin-left: 250px;}
 
@@ -123,7 +131,11 @@ h1	{text-transform: uppercase;
 		
 .td3		{
 		vertical-align: left;
-		}	
+		}
+		
+		
+		
+	
 		
 .tgtxt		{
 		
@@ -139,13 +151,62 @@ h1	{text-transform: uppercase;
 		border-top-right-radius: 20px;
 		}
 
-	
+.tableedit2	{margin-left: 300px;
 
+		}		
+		
+.createlink	{
+		margin-left:410px;
+		text-transform: uppercase;
+		font-size: 0.8em;
+		}
+		
+.usereditlink	{
+		margin-left:410px;
+		text-transform: uppercase;
+		font-size: 0.8em;
+		}
+		
+.bggray		{background: #cccccc;
+		width: 450px;
+		margin-left:250px;}
 
+.label		{margin-top:0px; 
+		text-transform:uppercase;
+		font-size:small;}
+
+.userdetails	{margin-left:250px; }
+
+.details	{padding-left: 10px;}
+
+.obl		{margin-left:160px; }
+		
+.label2		{margin-top:10px; 
+		width: 150px;
+		padding-right:50px;
+		text-transform:uppercase;
+		font-size:small;}
+		
+.details2	{padding-left: 0px;
+	padding-right: 40px;
+		width:400px;}
 		
 
-
-
+.gravatar	{
+		float:right;
+		height:50px;
+		margin-left:10px;
+		margin-top:-15px;
+		border-radius:50px;
+		margin-right:-10px;
+		border:3px solid #000000;
+		}
+		
+.delete		{margin-top:10px; 
+		margin-left:180px;
+		text-transform:uppercase;
+		font-size:0.8em;
+		text-align: center;}		
 
 
 

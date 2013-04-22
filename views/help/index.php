@@ -1,6 +1,7 @@
-<h1>Help</h1>
+<h1>Hjälp</h1>
 <hr />
 
 <p class="center">
-Detta är hjälpsidan!
+Denna sidan är gjord som övningsuppgift för kursen PHPMVC på Blekinge Tekniska Högskola.<br />
+Här kan du titta runt och testa sidan. Skriv gärna lite feedback i gästboken.
 </p>

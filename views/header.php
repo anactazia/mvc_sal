@@ -2,42 +2,60 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Test</title>
+	<title>SAL</title>
 	<link rel="stylesheet" href="<?php echo URL; ?>public/css/default.css" />
-	<script type="text/javascript" src="<?php echo URL; ?>public/js/jquery.js"></script>
-	<script type="text/javascript" src="<?php echo URL; ?>public/js/custom.js"></script>
-	<?php
-		if (isset($this->js)) 
-		{
-			foreach ($this->js as $js)
-			{
-				echo '<script type="text/javascript" src="'.URL.'views/'.$js.'"></script>';
-			}
-		}
-	?>
+
 </head>
 <body>
 
-<?php Session::init(); ?>
-	
+<?php 
+		
+
+Session::init();
+
+$email = 'anna';
+
+$hash = md5(strtolower(trim($email)));
+
+$gravatar = "<img class='gravatar' src='http://www.gravatar.com/avatar/$hash.jpg?r=pg&amp;d=wavatar&amp;' />";
+
+
+
+?>
+
 <div id="header">
 
 	<?php if (Session::get('loggedIn') == false):?>
 		<a href="<?php echo URL; ?>index">Index</a>
-		<a href="<?php echo URL; ?>guestbook">Guestbook</a>
-		<a href="<?php echo URL; ?>help">Help</a>
-		<a href="http://www.student.bth.se/~anza13/phpmvc/me/kmom03/home.php">Tillbaka till Me-Sidan</a>
+		<a href="<?php echo URL; ?>guestbook">Gästbok</a>
+		<a href="<?php echo URL; ?>help">Hjälp</a>
+		<a href="http://www.student.bth.se/~anza13/phpmvc/me/kmom04/home.php">Me-Sidan</a>
+		<div class="loginmenu">
+		<a href="<?php echo URL; ?>user/usercreate">Skapa</a>
+		<a href="<?php echo URL; ?>login">Login</a>
+		</div>
 	<?php endif; ?>	
 	<?php if (Session::get('loggedIn') == true):?>
-		<a href="<?php echo URL; ?>dashboard">Dashboard</a>
+	        <a href="<?php echo URL; ?>index">Index</a>
+		<a href="<?php echo URL; ?>guestbook">Gästbok</a>
+		<a href="<?php echo URL; ?>help">Hjälp</a>
+		<a href="http://www.student.bth.se/~anza13/phpmvc/me/kmom04/home.php">Me-Sidan</a>
+		<div class="loginmenu">
+		<?php echo $gravatar; ?>   
 		
-		<?php if (Session::get('role') == 'owner'):?>
-		<a href="<?php echo URL; ?>user">Users</a>
+		<?php if (Session::get('role') == 'admin'):?>
+		<a href="<?php echo URL; ?>user/useredit">Ändra</a>
+		<a href="<?php echo URL; ?>user/admin">Admin</a>
 		<?php endif; ?>
 		
+		<?php if (Session::get('role') !== 'admin'):?>
+		<a href="<?php echo URL; ?>user/useredit">Ändra</a>
+						
+		<?php endif; ?>
+		
+		
 		<a href="<?php echo URL; ?>dashboard/logout">Logout</a>	
-	<?php else: ?>
-		<a href="<?php echo URL; ?>login">Login</a>
+		</div>
 	<?php endif; ?>
 </div>
 	

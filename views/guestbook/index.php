@@ -2,9 +2,9 @@
 <hr />
 
 <form method="post" action="<?php echo URL;?>guestbook/create" class="formguest">
-	<label><span class="uppercase">Ämne</span></label><input type="text" name="topic" /><br />
-	<label><span class="uppercase">Meddelande</span></label><input type="text" name="message" /><br />
-	<label><span class="uppercase">Skribent</span></label><input type="text" name="writer" /><br />
+	<label><span class="uppercase">Ämne</span></label><input type="text" required name="topic" /><br />
+	<label><span class="uppercase">Meddelande</span></label><input type="text" required name="message" /><br />
+	<label><span class="uppercase">Skribent</span></label><input type="text" required name="writer" /><br />
 		
 	<label>&nbsp;</label><input type="submit" />
 </form>
