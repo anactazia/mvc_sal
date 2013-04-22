@@ -3,7 +3,7 @@ php_value error_reporting 9999
 
 RewriteEngine on
 
-RewriteBase /~anza13/phpmvc/me/kmom04/mvc_sal/
+RewriteBase /~anza13/phpmvc/me/kmom05/mvc_sal/
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-l

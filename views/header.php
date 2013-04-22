@@ -29,7 +29,7 @@ $gravatar = "<img class='gravatar' src='http://www.gravatar.com/avatar/$hash.jpg
 		<a href="<?php echo URL; ?>index">Index</a>
 		<a href="<?php echo URL; ?>guestbook">Gästbok</a>
 		<a href="<?php echo URL; ?>help">Hjälp</a>
-		<a href="http://www.student.bth.se/~anza13/phpmvc/me/kmom04/home.php">Me-Sidan</a>
+		<a href="http://www.student.bth.se/~anza13/phpmvc/me/kmom05/home.php">Me-Sidan</a>
 		<div class="loginmenu">
 		<a href="<?php echo URL; ?>user/usercreate">Skapa</a>
 		<a href="<?php echo URL; ?>login">Login</a>
@@ -39,7 +39,7 @@ $gravatar = "<img class='gravatar' src='http://www.gravatar.com/avatar/$hash.jpg
 	        <a href="<?php echo URL; ?>index">Index</a>
 		<a href="<?php echo URL; ?>guestbook">Gästbok</a>
 		<a href="<?php echo URL; ?>help">Hjälp</a>
-		<a href="http://www.student.bth.se/~anza13/phpmvc/me/kmom04/home.php">Me-Sidan</a>
+		<a href="http://www.student.bth.se/~anza13/phpmvc/me/kmom05/home.php">Me-Sidan</a>
 		<div class="loginmenu">
 		<?php echo $gravatar; ?>   
 		
