@@ -1,5 +1,6 @@
 <h1>Index</h1>
+<hr />
 
-<p>
-This is the main page welcome!
+<p class="center">
+Välkommen till SAL!
 </p>

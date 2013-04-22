@@ -1,5 +1,6 @@
 <h1>Help</h1>
+<hr />
 
-<p>
-This is the help.
+<p class="center">
+Detta är hjälpsidan!
 </p>

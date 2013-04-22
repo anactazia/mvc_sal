@@ -1,6 +1,7 @@
 <h1>User</h1>
+<hr />
 
-<form method="post" action="<?php echo URL;?>user/create">
+<form method="post" action="<?php echo URL;?>user/create" class="formuser">
 	<label>Login</label><input type="text" name="login" /><br />
 	<label>Password</label><input type="text" name="password" /><br />
 	<label>Role</label>
@@ -13,7 +14,7 @@
 
 <hr />
 
-<table>
+<table class="tableuser">
 <?php
 	foreach($this->userList as $key => $value) {
 		echo '<tr>';

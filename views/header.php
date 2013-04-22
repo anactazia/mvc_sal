@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Test</title>
 	<link rel="stylesheet" href="<?php echo URL; ?>public/css/default.css" />
 	<script type="text/javascript" src="<?php echo URL; ?>public/js/jquery.js"></script>
@@ -23,7 +24,9 @@
 
 	<?php if (Session::get('loggedIn') == false):?>
 		<a href="<?php echo URL; ?>index">Index</a>
+		<a href="<?php echo URL; ?>guestbook">Guestbook</a>
 		<a href="<?php echo URL; ?>help">Help</a>
+		<a href="http://www.student.bth.se/~anza13/phpmvc/me/kmom03/home.php">Tillbaka till Me-Sidan</a>
 	<?php endif; ?>	
 	<?php if (Session::get('loggedIn') == true):?>
 		<a href="<?php echo URL; ?>dashboard">Dashboard</a>

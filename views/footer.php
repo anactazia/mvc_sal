@@ -1,7 +1,7 @@
 </div>
 
 <div id="footer">
-  (C) Footer
+<p class="uppercase center">&copy; Anactazia</p>
 </div>
 
 </body>
